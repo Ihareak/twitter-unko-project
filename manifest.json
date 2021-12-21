@@ -1,0 +1,11 @@
+{
+    "version":"1.0",
+    "name":"Twitter Unko Project",
+    "manifest_version":2,
+    "content_scripts":[
+        {
+            "matches":["https://twitter.com/*"],
+            "js":["main.js"]
+        }
+    ]
+}

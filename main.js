@@ -1,9 +1,11 @@
 console.log("working");
 const canvas=document.createElement("canvas"),ctx=canvas.getContext("2d");
-canvas.width=200;
-canvas.height=200;
-ctx.font="200px san-serif";
-ctx.fillText("💩",-40,140);
+canvas.width=400;
+canvas.height=400;
+ctx.font="320px san-serif";
+ctx.textAlign="center";
+ctx.textBaseline="middle";
+ctx.fillText("💩",200,150);
 const unkoUrl=canvas.toDataURL("image/png");
 console.log(unkoUrl);
 const mo=new MutationObserver(()=>{

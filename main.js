@@ -9,7 +9,7 @@ ctx.fillText("💩",200,150);
 const unkoUrl=canvas.toDataURL("image/png");
 console.log(unkoUrl);
 const mo=new MutationObserver(()=>{
-    const profileImages=document.querySelectorAll("[style*=profile]");
+    const profileImages=document.querySelectorAll("[style*=profile_images]");
     console.log(profileImages);
     for(let i=0;i<profileImages.length;i++){
         profileImages[i].style.backgroundImage=`url(${unkoUrl})`;

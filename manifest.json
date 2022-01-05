@@ -5,7 +5,7 @@
     "content_scripts":[
         {
             "matches":["https://twitter.com/*"],
-            "css":["unko.css"]
+            "js":["main.js"]
         }
     ]
 }

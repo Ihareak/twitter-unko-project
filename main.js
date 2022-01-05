@@ -1,4 +1,3 @@
-console.log("working");
 const canvas=document.createElement("canvas"),ctx=canvas.getContext("2d");
 canvas.width=400;
 canvas.height=400;
@@ -7,7 +6,6 @@ ctx.textAlign="center";
 ctx.textBaseline="middle";
 ctx.fillText("💩",200,150);
 const unkoUrl=canvas.toDataURL("image/png");
-console.log(unkoUrl);
 const mo=new MutationObserver(()=>{
     const profileImages=document.querySelectorAll("[style*=profile_images]");
     console.log(profileImages);
